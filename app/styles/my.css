@@ -1,0 +1,10 @@
+#wrap{
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -70px;
+    padding: 0 0 70px;
+}
+.footer{
+    position: relative;
+    z-index: 99;
+}
