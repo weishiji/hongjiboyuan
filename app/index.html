@@ -22,23 +22,23 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="mainmenu-wrapper">
+    <div class="mainmenu-wrapper" ng-controller="HeaderController">
         <div class="container">
             <nav id="mainmenu" class="mainmenu">
                 <ul>
                     <li class="logo-wrapper">
-                        <a href="index.html"><img src="images/mPurpose-logo.png" alt="Multipurpose Twitter Bootstrap Template"></a>
+                        <a href="#/"><img src="images/mPurpose-logo.png" alt="Multipurpose Twitter Bootstrap Template"></a>
                     </li>
-                    <li class="active">
-                        <a href="index.html">首页</a>
+                    <li ng-class="{ active: isActive('/')}">
+                        <a href="#/">首页</a>
                     </li>
-                    <li>
+                    <li ng-class="{ active: isActive('/products')}">
                         <a href="#/products">产品介绍</a>
                     </li>
-                    <li class="">
+                    <li ng-class="{ active: isActive('/about')}">
                         <a href="#/about">公司简介</a>
                     </li>
-                    <li>
+                    <li ng-class="{ active: isActive('/contact')}">
                         <a href="#/contact">联系我们</a>
                     </li>
                 </ul>
