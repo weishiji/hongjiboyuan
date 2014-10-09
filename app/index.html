@@ -22,7 +22,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
+    <!-- Header content -->
     <div class="mainmenu-wrapper" ng-controller="HeaderController">
         <div class="container">
             <nav id="mainmenu" class="mainmenu">
@@ -46,8 +46,11 @@
             </nav>
         </div>
     </div>
-    <div id="wrap" ng-view=""></div>
-    <!-- Footer -->
+    <!--Wrap content-->
+    <div id="wrap">
+        <div ng-view=""></div>
+    </div>
+    <!-- Footer content -->
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -95,6 +98,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
