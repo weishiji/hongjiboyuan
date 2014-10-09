@@ -17,6 +17,11 @@ angular
         'ngSanitize',
         'ngTouch'
     ])
+    .controller("HeaderController",function($scope, $location){
+        $scope.isActive = function (viewLocation) {
+            return viewLocation === $location.path();
+        };
+    })
     .config(function ($routeProvider) {
         $routeProvider
             .when('/', {
@@ -43,8 +48,3 @@ angular
                 redirectTo: '/'
             });
     });
-function HeaderController($scope, $location){
-    $scope.isActive = function (viewLocation) {
-        return viewLocation === $location.path();
-    };
-};
