@@ -23,5 +23,5 @@ angular.module('hongjiboyuanApp')
                 map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
                 map.disableInertialDragging()
             }
-        }, "北京市");
+        }, "北京市怀柔区");
   });
