@@ -21,7 +21,7 @@ angular.module('hongjiboyuanApp')
                 map.centerAndZoom(point, 14);
                 map.addOverlay(new BMap.Marker(point));
                 map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
-                map.enableContinuousZoom();
+                map.disableInertialDragging()
             }
         }, "北京市");
   });
