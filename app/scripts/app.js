@@ -44,6 +44,10 @@ angular
                 templateUrl: 'views/contact.html',
                 controller: 'ContactCtrl'
             })
+            .when('/product_details/:pid', {
+              templateUrl: 'views/product_details.html',
+              controller: 'ProductDetailsCtrl'
+            })
             .otherwise({
                 redirectTo: '/'
             });
