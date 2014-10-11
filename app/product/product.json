@@ -1,8 +1,8 @@
 {
     "HBY-JKF01" : {
         "name" : "HBY-JKF01 控制器"
-        ,"image" : "images/HBY-JKF01.png"
-        ,"port" : "images/HBY-JKF01-port.png"
+        ,"image" : "product/HBY-JKF01.png"
+        ,"port" : "product/HBY-JKF01-port.png"
         ,"main" : [
             "对负荷开关进行就地合分闸操作"
             , "双断口防误操作设计"

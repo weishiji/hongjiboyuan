@@ -9,7 +9,7 @@
  */
 angular.module('hongjiboyuanApp')
     .controller('ProductDetailsCtrl', function ($scope,$resource,$routeParams) {
-        $resource("/product_json/product.json")
+        $resource("/product/product.json")
             .get({},function(dt){
                 $scope.product = dt[$routeParams.pid]
             });
