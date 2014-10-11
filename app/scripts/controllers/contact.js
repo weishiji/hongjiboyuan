@@ -11,7 +11,7 @@ angular.module('hongjiboyuanApp')
   .controller('ContactCtrl', function ($scope) {
         // 百度地图API功能
         var map = new BMap.Map("contact-us-map");
-        var point = new BMap.Point(116.331398,39.897445);
+        var point = new BMap.Point(116.745407,40.337699);
         map.centerAndZoom(point,12);
         // 创建地址解析器实例
         var myGeo = new BMap.Geocoder();
