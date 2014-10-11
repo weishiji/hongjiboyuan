@@ -4,6 +4,13 @@
     margin: 0 auto -70px;
     padding: 0 0 70px;
 }
+.product-detail-info ul li{
+    margin-bottom: 15px;
+}
+.product-detail-info ul li span{
+    margin-right: 5px;
+    top: 3px;
+}
 .footer{
     position: relative;
     z-index: 99;
