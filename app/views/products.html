@@ -1,39 +1,22 @@
 <div class="section">
     <div class="container">
-        <!--<div class="row service-wrapper-row" ng-repeat="(pid,product) in products">
-            <div class="col-sm-4">
-                <a ng-href="#/product_details/{{pid}}">
-                    <div class="service-image">
-                        <img ng-src="{{product.image}}" alt="{{product.name}}">
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-8">
-                <h3>
-					<a ng-href="#/product_details/{{pid}}">{{product.name}}</a>
-				</h3>
-                <p ng-repeat="main in product.main">
-                    {{main}}
-                </p>
-            </div>
-        </div>-->
-        <div class="row">
-            <div class="col-sm-6" ng-repeat="(pid,product) in products">
-                <a href="#/product_details/{{pid}}">
-                    <div class="portfolio-item">
+        <span ng-repeat="(pid,product) in products">
+            <div ng-if="$index % 2 === 0" class="clearfix"></div>
+            <div class="col-sm-6">
+                <div class="portfolio-item">
+                    <a href="#/product_details/{{pid}}">
                         <div class="portfolio-image">
-                                <img src="{{product.image}}" alt="{{product.name}}">
+                            <img src="{{product.image}}" alt="{{product.name}}">
                         </div>
-                        <div class="portfolio-info">
-                            <h4 class="portfolio-project-name text-center">{{product.name}}</h4>
-                            <ul ng-repeat="main in product.main">
-                                <li>{{main}}</li>
-                            </ul>
-                        </div>
+                    </a>
+                    <div class="portfolio-info">
+                        <h4 class="portfolio-project-name text-center">{{product.name}}</h4>
+                        <ul>
+                            <li ng-repeat="main in product.main">{{main}}</li>
+                        </ul>
                     </div>
-                </a>
+                </div>
             </div>
-        </div>
-
+        </span>
     </div>
 </div>
