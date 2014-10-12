@@ -45,7 +45,7 @@
                         <!-- Tab Content (Specification) -->
                         <div class="tab-pane" id="tab2">
                             <ul class="nav" ng-repeat="value in product.technical">
-                                <li><span class="glyphicon glyphicon-tag"></span>{{value}}</li>
+                                <li><span class="glyphicon glyphicon-tag"></span><span ng-bind-html="value"></span></li>
                             </ul>
                         </div>
                         <div class="tab-pane" id="tab3">
