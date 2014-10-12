@@ -11,6 +11,11 @@
     margin-right: 5px;
     top: 3px;
 }
+.product-detail-info ul li sup{
+    display: inline-block;
+    -webkit-text-size-adjust:none;
+    -webkit-transform: scale(0.75);
+}
 .footer{
     position: relative;
     z-index: 99;
